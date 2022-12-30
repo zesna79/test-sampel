@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="tools">
+			<div class="setting">
+				<div class="eraser">
+					<i class="fa-solid fa-eraser"></i>
+					<label>eraser</label>
+				</div>
+				<div class="brush active">
+					<i class="fa-solid fa-paint-brush"></i>
+					<label>brush</label>
+				</div>
+				<div class="color">
+					<i class="fa-sharp fa-solid fa-palette"></i>
+					<label for="color-piker">change color</label>
+					<input type="color"  id="color-piker">
+				</div>
+				<input type="range" id="brush-width" min="1" max="10">
+			</div>
+			<div class="buttons">
+				<button class="save">save</button>
+				<button class="clear">clear</button>
+			</div>
+		</div>
+		<div class="draw">
+			<canvas></canvas>
+		</div>
+	</div>
+	<script src="javas.js"></script>
+</body>
+
+</html>

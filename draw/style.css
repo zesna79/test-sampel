@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Vazirmatn&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Vazirmatn';
+}
+body{
+	background-color:rgb(244, 175, 96);
+	height: 100vh;
+}
+body , .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container{
+	width: 600px;
+	background-color: aliceblue;
+	height: 400px;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tools{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px, 10px, 0 ,0;
+	border-bottom: 2px solid gray;
+}
+canvas{
+	width: 600px;
+	height: 350px;
+	border-radius:0 0 10px 10px;
+}
+.setting{
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+}
+.color{
+	display:flex;
+	align-items: center;
+}
+.eraser , .brush{
+	margin: 0 10px;
+	font-size: 14px;
+	cursor: pointer;
+	color: gray;
+}
+.color{
+	margin: 0 10px;
+	font-size: 14px;
+	color: gray;
+}
+#color-piker{
+	width: 15px;
+	height: 15px;
+	margin: 0 5px;
+	cursor: pointer;
+	border: none;
+}
+i{
+	margin: 2px;
+}
+input[type="range"]{
+	border: none;
+	width:100px;
+	height: 7px;
+	margin: 5px;
+	cursor: pointer;
+	background-color: transparent;
+}
+button{
+	border: none;
+	padding: 4px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 0 5px;
+}
+.save{
+	background-color: rgb(244, 175, 96);
+}
+.active{
+	color: rgb(237, 165, 83);
+	font-weight: bolder;
+}
+input[type="color"]::-webkit-color-swatch-wrapper{
+	padding:0;
+}
+input[type="color"]::-webkit-color-swatch{
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 3px;
+}
+input[type="color"]::-moz-color-swatch{
+	border-style: none;
+}
+label{
+	cursor: pointer;
+}

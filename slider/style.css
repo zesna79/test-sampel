@@ -1,0 +1,92 @@
+img {
+	width: 500px;
+	height: 300px;
+	border-radius: 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 10%;
+}
+
+p {
+	position: relative;
+	width: 110px;
+	bottom: 48px;
+	color: #fff;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 3px;
+	text-align: center;
+	border-radius: 5px;
+	left: 38%;
+}
+
+i{
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	color: #fff;
+	font-weight: bold;
+	top: 250px;
+	padding: 3px;
+	text-align: center;
+	transition: 0.5s ease;
+}
+i:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+}
+
+.next {
+	right: 120px;
+}
+
+.prev {
+	left: 116px;
+}
+
+.dot {
+	cursor: pointer;
+	position: relative;
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: rgb(61, 61, 61);
+	margin-top: 405px;
+	margin-left: 3px;
+}
+.dot:hover , .active{
+	background-color: rgb(128, 127, 127);
+}
+.num{
+	position: relative;
+	width: 40px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 3px;
+	text-align: center;
+	border-radius: 5px;
+	top: 30px;
+	left: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+
+@keyframes fade{
+	from{opacity:0.5}
+	to{opacity:1}
+}
+.fade{
+	animation-name: fade;
+	animation-duration: 1s;
+}
